@@ -1,1 +1,1 @@
-document.addEventListener('DOMContentLoaded',()=>{const y=document.querySelector('[data-year]');if(y)y.textContent=new Date().getFullYear();document.querySelectorAll('.logo').forEach(el=>{el.innerHTML='<img src="https://www.ambergreensafety.co.uk/images/ambergreen_logo_v02.gif" alt="Ambergreen Safety" class="brand-logo">';});});
+document.addEventListener('DOMContentLoaded',()=>{const y=document.querySelector('[data-year]');if(y)y.textContent=new Date().getFullYear();});
