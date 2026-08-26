@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ambergreensafety733.github.io/anbergreen-safety-website/sitemap.xml
+Sitemap: https://www.ambergreensafety.co.uk/sitemap.xml
