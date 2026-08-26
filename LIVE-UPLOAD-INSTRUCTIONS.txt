@@ -1,0 +1,39 @@
+AMBERGREEN SAFETY — LIVE WEBSITE UPLOAD
+Prepared: 26 August 2026
+Target domain: https://www.ambergreensafety.co.uk/
+
+UPLOAD
+1. Back up the existing live website before replacing anything.
+2. Upload the CONTENTS of this package to the web root for www.ambergreensafety.co.uk (not the enclosing GitHub folder name).
+3. Preserve the folder structure, especially /assets/.
+4. Confirm index.html is the default home page.
+5. Ensure HTTPS is enabled and the preferred public address resolves to https://www.ambergreensafety.co.uk/.
+6. Where the server permits, permanently redirect alternate host/protocol versions (http and non-www) to https://www.ambergreensafety.co.uk/.
+
+SEO / INDEXING
+- robots.txt allows crawling and points to https://www.ambergreensafety.co.uk/sitemap.xml
+- sitemap.xml contains the principal public pages using the final live domain.
+- The home page has a self-referencing live-domain canonical, index/follow directive, Open Graph metadata and ProfessionalService structured data.
+- The shared site JavaScript enforces the correct live-domain canonical URL and index/follow directive across public pages.
+- Page titles, descriptions, headings and content target the relevant Health & Safety services and Worthing / Sussex service area.
+
+AFTER UPLOAD — CHECK BEFORE SEARCH SUBMISSION
+1. Open https://www.ambergreensafety.co.uk/ and navigate every main-menu page.
+2. Check desktop and mobile navigation.
+3. Check the orange AG browser-tab icon.
+4. Test Call, Email and Contact Form buttons.
+5. Test the contact form / email behaviour.
+6. Open https://www.ambergreensafety.co.uk/robots.txt and confirm it loads.
+7. Open https://www.ambergreensafety.co.uk/sitemap.xml and confirm it loads.
+8. Confirm no page contains a noindex directive.
+9. Confirm important pages return HTTP 200 and HTTPS works without certificate warnings.
+
+GOOGLE SEARCH CONSOLE
+After the above checks pass:
+1. Verify the www.ambergreensafety.co.uk property if not already verified.
+2. Submit: https://www.ambergreensafety.co.uk/sitemap.xml
+3. Use URL Inspection to request indexing for the home page and key pages: Services, Risk Assessments, Construction & CDM, SSIP Accreditation, H&S Documentation, Competent Person, Training and Areas We Cover.
+4. Keep any useful permanent redirects from old URLs to their closest equivalent new URLs so existing search value and external links are not lost.
+
+IMPORTANT
+Do not submit the GitHub Pages test address to Google Search Console. The permanent search target is www.ambergreensafety.co.uk.
