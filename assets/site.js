@@ -8,3 +8,17 @@ let btn=document.querySelector('.menu-btn'),nav=document.querySelector('.nav');i
 if(nav){nav.querySelectorAll('nav a').forEach(l=>{let href=((l.getAttribute('href')||'').split('?')[0].split('#')[0].split('/').pop()||'index.html').toLowerCase();if(href===current){l.classList.add('active-page');l.setAttribute('aria-current','page')}})}if(btn&&nav){btn.textContent='MENU ☰';btn.setAttribute('aria-expanded','false');btn.addEventListener('click',()=>{let o=nav.classList.toggle('menu-open');btn.setAttribute('aria-expanded',o?'true':'false');btn.textContent=o?'MENU ✕':'MENU ☰'})}
 let footer=document.querySelector('footer');if(footer){let t='Ambergreen Safety © 2026',d='Practical Health & Safety consultancy for businesses in Worthing, West Sussex and surrounding Sussex areas.',review='<a class="google-review-btn" href="https://g.page/r/CXESocpQwlxbEAE/review" target="_blank" rel="noopener">Leave us a Google Review</a>',home='<a class="footer-home" href="index.html">Home</a>',menu='<button class="footer-mobile-menu-btn" type="button">MENU ☰</button>';footer.innerHTML='<div class="container"><div class="lower-actions">'+review+(current==='index.html'?'':home)+(current==='index.html'?'':menu)+'</div><h3>'+t+'</h3><p>'+d+'</p><div class="footer-mobile-nav"></div></div>';let bn=footer.querySelector('.footer-mobile-nav');if(nav&&bn)nav.querySelectorAll('nav a').forEach(l=>bn.appendChild(l.cloneNode(true)));let bb=footer.querySelector('.footer-mobile-menu-btn');if(bb&&bn)bb.addEventListener('click',()=>bn.classList.toggle('open'))}
 });
+
+/* Fix Competent Person Service callout text visibility */
+window.addEventListener('load', function () {
+  document.querySelectorAll('.callout').forEach(function (box) {
+    box.style.setProperty('color', '#1b2722', 'important');
+
+    box.querySelectorAll('h1,h2,h3,h4,p,strong,span,li').forEach(function (el) {
+      el.style.setProperty('color', '#1b2722', 'important');
+      el.style.setProperty('opacity', '1', 'important');
+      el.style.setProperty('visibility', 'visible', 'important');
+      el.style.setProperty('text-shadow', 'none', 'important');
+    });
+  });
+});
